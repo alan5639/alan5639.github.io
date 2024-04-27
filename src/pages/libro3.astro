@@ -1,0 +1,79 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Otra vuelta de tuerca">
+	<main>
+		<h1>Otra vuelta de tuerca</span></h1>
+		<section>
+			<img src="https://th.bing.com/th/id/OIP.0E6GIz1ab3IiqbaVkczvmQHaLd?w=178&h=276&c=7&r=0&o=5&pid=1.7">
+			<img src="https://th.bing.com/th/id/OIP.HJ3RHjSPi3dCaBFvGk0JZgHaKS?w=178&h=247&c=7&r=0&o=5&pid=1.7">
+			<img src="https://th.bing.com/th/id/OIP.KzDVAZJHbpHNjquuwugnvQHaMJ?w=178&h=292&c=7&r=0&o=5&pid=1.7">
+			<img src="https://th.bing.com/th/id/OIP.eIIPTmatVvraTg_QwGjjmwHaKP?w=178&h=246&c=7&r=0&o=5&pid=1.7">
+			<img src="https://th.bing.com/th/id/OIP.jKTjRBWVSj6CcfXqt9KzZgAAAA?w=165&h=254&c=7&r=0&o=5&pid=1.7">
+			<img src="https://th.bing.com/th/id/OIP.0kDz1pE5Q0UZKZHxXx4UVwHaKD?w=178&h=242&c=7&r=0&o=5&pid=1.7">
+		</section>
+		<h2>Henry JAMES</span></h2>
+		<h3>Fecha de publicación: enero 1, 1898</span></h3>
+		<p>
+			Esta novela de Henry James es un clásico del género de terror psicológico que ha cautivado a lectores durante generaciones. La trama sigue a una joven institutriz contratada para cuidar a dos niños huérfanos en una mansión rural. Pronto descubre que la casa está plagada de secretos oscuros y presencias sobrenaturales. La atmósfera de tensión y misterio se construye de manera magistral, manteniendo al lector en vilo hasta el inquietante final. Además de ser una historia de terror, "Otra vuelta de tuerca" también es una exploración fascinante de la psicología humana y los límites de la percepción.
+		</p>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	h2 {
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 1em;
+	}
+	h3 {
+		font-weight: 600;
+		line-height: 1;
+		margin-bottom: 1em;
+	}
+	p {
+		font-weight: 500;
+		line-height: 1;
+		margin-bottom: 1em;
+	}
+	section {
+		display: flex;
+		text-align: center;
+		width: 900px;
+		height: 300px;
+	}
+
+	section img{
+		width: 0px;
+		flex-grow: 1;
+		object-fit: cover;
+		opacity: .9;
+		transition: .5s ease;
+	}
+	section img:hover{
+		cursor: crosshair;
+		width: 150px;
+		opacity: 1;
+		filter: contrast(120%);
+	}
+
+</style>

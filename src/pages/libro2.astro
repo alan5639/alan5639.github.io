@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="El conde de monstecristo">
+<main>
+		<h1>El conde de Montecristo</span></h1>
+		<section>
+			<img src="https://th.bing.com/th/id/OIG1.tGX_IOAG5W.EUmQMkixM?w=270&h=270&c=6&r=0&o=5&pid=ImgGn">
+			<img src="https://th.bing.com/th?id=OSK.HEROUlywIoAIdBnjpWDDWN28jMYfJmtInms18AVY5PWVrpk&w=384&h=228&c=13&rs=2&o=6&oif=webp&pid=SANGAM">
+			<img src="https://th.bing.com/th/id/OIP.Y7hHRFWNgARUYLjhrE0qLwHaLq?w=178&h=280&c=7&r=0&o=5&pid=1.7">
+			<img src="https://th.bing.com/th/id/OIG1.21yVKNS60f.LjCzU7Leq?w=270&h=270&c=6&r=0&o=5&pid=ImgGn">
+			<img src="https://th.bing.com/th/id/OIP.FXcNXaqh-nfbwnlKe5Y5nAAAAA?w=166&h=254&c=7&r=0&o=5&pid=1.7">
+			<img src="https://th.bing.com/th/id/OIP.mHd68mkD-buu2d2GgAbkowAAAA?w=178&h=271&c=7&r=0&o=5&pid=1.7">
+		</section>
+		<h2>Alexamdre Dumas</span></h2>
+		<h3>Fecha de publicación: agosto 28, 1844</span></h3>
+		<p>
+			Esta novela es una obra maestra de la narrativa de aventuras. Con una trama compleja y llena de giros inesperados, te sumergirá en un mundo de venganza, intriga, amor y redención. La historia sigue la vida de Edmond Dantès, un joven marinero injustamente encarcelado, que luego de escapar de prisión, regresa como el misterioso Conde de Montecristo para llevar a cabo su venganza contra aquellos que lo traicionaron. A través de sus páginas, explorarás temas profundos como la justicia, la moralidad y el poder del perdón.	
+		</p>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	h2 {
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 1em;
+	}
+	h3 {
+		font-weight: 600;
+		line-height: 1;
+		margin-bottom: 1em;
+	}
+	p {
+		font-weight: 500;
+		line-height: 1;
+		margin-bottom: 1em;
+	}
+	section {
+		display: flex;
+		text-align: center;
+		width: 900px;
+		height: 300px;
+	}
+
+	section img{
+		width: 0px;
+		flex-grow: 1;
+		object-fit: cover;
+		opacity: .9;
+		transition: .5s ease;
+	}
+	section img:hover{
+		cursor: crosshair;
+		width: 150px;
+		opacity: 1;
+		filter: contrast(120%);
+	}
+
+</style>

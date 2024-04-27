@@ -1,0 +1,132 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Recomendación de libros">
+	<main>
+		<svg  
+			xmlns="http://www.w3.org/2000/svg"  
+			width="800"  
+			height="50"  
+			viewBox="0 0 24 24"  
+			fill="none"  
+			stroke="#e2cfcf"  
+			stroke-width="1"  
+			stroke-linecap="round"  
+			stroke-linejoin="round"  
+			class="icon icon-tabler icons-tabler-outline icon-tabler-book">
+			<path 
+				stroke="none" 
+				d="M0 0h24v24H0z" 
+				fill="none"/>
+			<path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+			<path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+			<path d="M3 6l0 13" />
+			<path d="M12 6l0 13" />
+			<path d="M21 6l0 13" />
+		</svg>
+		<h1>Bienvenido <span class="text-gradient">Lector</span></h1>
+		<p class="instructions">
+			¿Estás buscando<strong> nuevos</strong> libros?📖<br />
+		</p>
+		<ul role="list" class="link-card-grid">
+			<a href="libro1">
+				<picture class="center-image"> 
+				  <img class="mb-5 rounded-lg" src="https://www.cinconoticias.com/wp-content/uploads/el-senor-de-las-moscas.jpg" alt="portada" style="width: 200px; height: auto;" />
+				</picture>
+			</a>
+			<Card
+				href="libro1"
+				title="El señor de las moscas"
+				body="Recomendado para: Lectores interesados en la psicología humana, aquellos que disfrutan de las historias de supervivencia y exploración, y cualquier persona que busque una reflexión profunda sobre la condición humana."
+			/>
+			<a href="libro2">
+				<picture class="center-image"> 
+				  <img class="mb-5 rounded-lg" src="https://th.bing.com/th/id/OIP.6SAnRKR60_PjAGTC03gF3AHaLD?rs=1&pid=ImgDetMain" alt="portada" style="width: 200px; height: auto;"/>
+				</picture>
+			</a>
+			<Card
+				href="libro2"
+				title="El conde de montecristo🗝️"
+				body="Recomendado para: Amantes de la literatura clásica, aficionados a las novelas de aventuras, y aquellos que disfrutan de historias épicas llenas de intriga y emoción."
+			/>
+			<a href="libro3">
+				<picture class="center-image"> 
+				  <img class="mb-5 rounded-lg" src="https://th.bing.com/th/id/OIP.jKTjRBWVSj6CcfXqt9KzZgAAAA?rs=1&pid=ImgDetMain" alt="portada" style="width: 200px; height: auto;" />
+				</picture>
+			</a>
+			<Card
+				href="libro3"
+				title="Otra vuelta de tuerca🔩"
+				body="Recomendado para: Amantes del género de terror psicológico, aquellos que disfrutan de tramas intrincadas y personajes complejos, y lectores que buscan una experiencia literaria inquietante y memorable."
+			/>
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+		text-align: center; /* Centrar el texto */
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+	.center-image {
+		display: flex;
+		justify-content: center; /* Centra horizontalmente */
+		align-items: center; /* Centra verticalmente */
+		padding: 4px; /* Puedes ajustar este valor según sea necesario */
+  }
+</style>

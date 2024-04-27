@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="el senor de las moscas">
+	<main>
+		<h1>El señor de las moscas</span></h1>
+		<section>
+			<img src="https://th.bing.com/th/id/OIP.XAb-wROvL18Kz3bjh8PkVQHaLH?w=178&h=267&c=7&r=0&o=5&pid=1.7">
+			<img src="https://www.bing.com/th?id=OIP.iUR0pbYeWsDB8hoDqlhANQHaJ-&w=200&h=200&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
+			<img src="https://th.bing.com/th/id/OIP.SkTgX8FL-cCf6SO-oEaB2QHaJ4?w=178&h=237&c=7&r=0&o=5&pid=1.7">
+			<img src="https://th.bing.com/th/id/OIP.sighRo8nkdJ_6qJDDFo-kQAAAA?w=178&h=268&c=7&r=0&o=5&pid=1.7">
+			<img src="https://th.bing.com/th/id/OIP.t3tYlPJWKbI1pXWT1S2TYwHaLH?w=178&h=267&c=7&r=0&o=5&pid=1.7">
+			<img src="https://th.bing.com/th/id/OIP.0r9wDhxYoK40rzuf8ohfcAHaLH?w=178&h=267&c=7&r=0&o=5&pid=1.7">
+		</section>
+		<h2>William Golding</span></h2>
+		<h3>Fecha de publicación: septiembre 17, 1954</span></h3>
+		<p>
+			"El señor de las moscas" es una novela que explora las profundidades oscuras de la naturaleza humana a través de la historia de un grupo de niños varados en una isla desierta. Cuando se ven libres de las restricciones de la sociedad, los niños comienzan a formar su propia comunidad y a enfrentarse a desafíos de supervivencia. Sin embargo, lo que comienza como una aventura se convierte rápidamente en una lucha por el poder y la dominación. La novela aborda temas universales como el bien y el mal, la violencia, la civilización y la barbarie, y plantea preguntas profundas sobre la naturaleza humana.
+		</p>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: rgb(255, 255, 255);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	h2 {
+		font-weight: 700;
+		line-height: 1;
+		margin-bottom: 1em;
+	}
+	h3 {
+		font-weight: 600;
+		line-height: 1;
+		margin-bottom: 1em;
+	}
+	p {
+		font-weight: 500;
+		line-height: 1;
+		margin-bottom: 1em;
+	}
+	section {
+		display: flex;
+		text-align: center;
+		width: 900px;
+		height: 300px;
+	}
+
+	section img{
+		width: 0px;
+		flex-grow: 1;
+		object-fit: cover;
+		opacity: .9;
+		transition: .5s ease;
+	}
+	section img:hover{
+		cursor: crosshair;
+		width: 150px;
+		opacity: 1;
+		filter: contrast(120%);
+	}
+
+</style>
